@@ -9,8 +9,8 @@ body {
     align-items: center;
     position: relative;
     margin-top: 20px;
-    margin-left: 40px;
     height: 70px;
+    margin-left: 320px;
 }
 
 
@@ -292,7 +292,8 @@ a {
 }
 
 .infoBox1, .infoBox2, .infoBox3,
-.infoBox4, .infoBox5{
+.infoBox4, .infoBox5 {
+    position: relative;
     display: block;
     border-radius: 10px;
     background: #F2F7FC;
@@ -318,6 +319,7 @@ a {
     color: #315B7C;
     padding-top: 20px;
     padding-left: 20px;
+    padding-right: 20px;
     margin: 0;
 }
 
@@ -332,18 +334,43 @@ a {
 
 .moreInfo {
     display: inline-block;
-    color: #F2F7FC;
-    margin-top: 10%;
-    margin-left: 50%;
+    visibility: hidden;
+    color: #315B7C;
+    position: absolute;
+    right: 60px;
+    bottom: 20px;
 }
 
-.moreInfo:hover {
-    color: #315B7C;
+.infoBox1:hover .moreInfo {
+    visibility: visible;
+}
+
+.infoBox2:hover .moreInfo {
+    visibility: visible;
+}
+
+.infoBox3:hover .moreInfo {
+    visibility: visible;
+}
+
+.infoBox4:hover .moreInfo {
+    visibility: visible;
+}
+
+.infoBox5:hover .moreInfo {
+    visibility: visible;
 }
 
 .buildIcon {
-    margin-top: 10%;
-    margin-left: 10%;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.blockInfo4 {
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-right: 408px;
 }
 
 .myFooter {
