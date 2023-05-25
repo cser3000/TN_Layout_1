@@ -1,9 +1,10 @@
 body {
+    box-sizing: content-box;
     width: 1280px;
     margin: auto;
     background-color: var(--progect-color1);
-    font-family: Arial, Verdana, sans-serif;
-    padding: 20px;
+    font-family: Arial, sans-serif;
+    padding: 20px 20px 90px 20px;
 }
 
 :root {
@@ -19,11 +20,8 @@ body {
 }
 
 .myHeader {
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 70px;
-    padding-left: 335px;
+    padding-left: 315px;
+    margin-bottom: 20px;
 }
 
 
@@ -93,15 +91,16 @@ body {
     margin-top: 0;
     height: 18px;
     color: var(--progect-color4);
+    font-weight: 400;
 }
 
 .mainContent {
     display: flex;
+    gap: 20px;
 }
 
 .sidebar {
     width: 295px;
-    margin-right: 20px;
 }
 
 .navigation {
@@ -201,6 +200,7 @@ a {
     height: 24px;
     font-size: 16px;
     margin-top: 16px;
+    font-weight: 500;
 }
 
 .infoQR {
@@ -224,6 +224,7 @@ a {
     display: block;
     width: 130px;
     height: 130px;
+    padding-top: 40px;
     margin: auto;
 }
 
@@ -235,12 +236,14 @@ a {
     height: 45px;
     width: 168px;
     border: none;
+    cursor: pointer;
+    font-weight: 500;
 }
 
 
 .mainInfo {
     width: 925px;
-    background:  linear-gradient(180deg, rgba(49, 91, 124, 0.02) 40%, #222328 100%), url("src/assets/image/trail-b3u6NeaiGkA-unsplash 1.png") no-repeat 0 0, var(--progect-color6);
+    background: url("src/assets/image/trail-b3u6NeaiGkA-unsplash 1.png") no-repeat 0 0, linear-gradient(180deg, rgba(49, 91, 124, 0.02) 35.84%, #222328 100%), var(--progect-color6);
     color: white;
     border-radius: 10px;
 }
@@ -267,21 +270,24 @@ a {
     padding-right: 408px;
 }
 
-
-
 .sizeTextInfo1 {
     font-size: 54px;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .sizeTextInfo2 {
     font-size: 24px;
-    margin-top: 0;
+    margin: 0;
+    font-weight: 700;
+    line-height: 30px;
 }
 
 .sizeTextInfo3 {
     font-size: 16px;
-    margin-top: 0;
+    margin: 0;
+    font-weight: 500;
+    line-height: 24px;
 }
 
 .redButton {
@@ -291,6 +297,8 @@ a {
     border: none;
     height: 40px;
     width: 190px;
+    cursor: pointer;
+    margin-top: 40px;
 }
 
 .infoBoxes {
@@ -298,6 +306,7 @@ a {
     gap: 20px;
     padding-inline: 20px;
     flex-wrap: wrap;
+    margin-top: 40px;
 }
 
 .infoBox1, .infoBox2, .infoBox3,
@@ -342,6 +351,8 @@ a {
     padding-left: 20px;
     padding-right: 30px;
     margin: 0;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 .moreInfo {
@@ -351,8 +362,10 @@ a {
     position: absolute;
     right: 60px;
     bottom: 20px;
+    transition: visibility 1s, 1s;
 }
 
+/*TODO попробуй сделать плавную анимацию появления текста (сейчас он резко появляется)*/
 .infoBox1:hover .moreInfo {
     visibility: visible;
 }
@@ -380,24 +393,39 @@ a {
 }
 
 .blockInfo4 {
-    padding-top: 40px;
+    padding-top: 80px;
     padding-left: 80px;
-    padding-right: 408px;
+    padding-right: 330px;
+}
+
+.sizeTextInfo4 {
+    font-size: 54px;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 .listBlock4 {
     padding-left: 15px;
+    list-style-type: square;
+    padding-right: 100px;
+}
+
+.elemListBlock4 {
+    font-size: 16px;
+    line-height: 24px;
 }
 
 .myFooter {
-    margin-top: 40px;
-    margin-left: 80px;
+    padding-top: 40px;
+    padding-left: 80px;
+    padding-bottom: 60px;
 }
 
 .question {
     height: 43px;
     display: flex;
     align-items: center;
+    margin-top: 40px;
 }
 
 .questionText {
@@ -416,9 +444,6 @@ a {
     display: flex;
     align-items: center;
     gap: 80px;
-}
-
-.users {
     margin-top: 40px;
 }
 
