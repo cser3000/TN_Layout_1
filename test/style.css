@@ -3,7 +3,7 @@ body {
     width: 1280px;
     margin: auto;
     background-color: var(--progect-color1);
-    font-family: Arial, sans-serif;
+    font-family: Stem, cursive;
     padding: 20px 20px 90px 20px;
 }
 
@@ -17,6 +17,7 @@ body {
     --progect-color7: #FF5561;
     --progect-color8: #FFFFFF;
     --progect-color9: #121212;
+    --progect-color10: #232328;
 }
 
 .myHeader {
@@ -43,7 +44,7 @@ body {
     outline: none;
     border-radius: 10px;
     height: 50px;
-    width: 610px;
+    width: 600px;
     padding-left: 15px;
 }
 
@@ -60,7 +61,8 @@ body {
 }
 
 .supervisor {
-    width: 295px;
+    width: 310px;
+    height: 50px;
     display: flex;
     align-items: center;
 }
@@ -73,16 +75,18 @@ body {
 .infoSupervisor {
     margin-left: 10px;
     display: block;
-    width: 200px;
+    width: 210px;
 }
 
 .nameSupervisor {
+    width: 210px;
     display: inline-block;
     font-size: 16px;
     margin-bottom: 0;
     height: 24px;
     color: var(--progect-color3);
     font-weight: 500;
+    line-height: 150%;
 }
 
 .postSupervisor {
@@ -243,9 +247,19 @@ a {
 
 .mainInfo {
     width: 925px;
-    background: url("src/assets/image/trail-b3u6NeaiGkA-unsplash 1.png") no-repeat 0 0, linear-gradient(180deg, rgba(49, 91, 124, 0.02) 35.84%, #222328 100%), var(--progect-color6);
     color: white;
     border-radius: 10px;
+    background: var(--progect-color10);
+}
+
+.background1 {
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(49, 91, 124, 0.02) 35%, #222328 100%), url("src/assets/image/trail-b3u6NeaiGkA-unsplash 1.png") no-repeat 0 0;
+}
+
+.background2 {
+    border-radius: 10px;
+    background: var(--progect-color10);
 }
 
 .myBody {
