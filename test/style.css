@@ -1,5 +1,5 @@
 body {
-    box-sizing: content-box;
+    box-sizing: border-box;
     width: 1280px;
     margin: auto;
     background-color: var(--progect-color1);
@@ -357,33 +357,37 @@ a {
 
 .moreInfo {
     display: inline-block;
-    visibility: hidden;
     color: var(--progect-color2);
     position: absolute;
     right: 60px;
     bottom: 20px;
-    transition: visibility 1s, 1s;
+    opacity: 0;
+    transition: 0.5s;
 }
 
-/*TODO попробуй сделать плавную анимацию появления текста (сейчас он резко появляется)*/
 .infoBox1:hover .moreInfo {
-    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .infoBox2:hover .moreInfo {
-    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .infoBox3:hover .moreInfo {
-    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .infoBox4:hover .moreInfo {
-    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .infoBox5:hover .moreInfo {
-    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .buildIcon {
